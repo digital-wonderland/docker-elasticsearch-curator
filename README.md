@@ -11,5 +11,5 @@
 ```ENTRYPOINT``` is set to ```/usr/bin/curator``` so you can just do something like
 
 ```
-docker run --rm digitalwonderland/elasticsearch-curator --host $IP --show-indices
+docker run --rm digitalwonderland/elasticsearch-curator --host $IP show --show-indices
 ```
