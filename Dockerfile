@@ -1,8 +1,8 @@
 # Elasticsearch Curator
 
-FROM digitalwonderland/base:centos6
+FROM digitalwonderland/base
 
-RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm \
+RUN yum install -y epel-release \
   && yum install -y python-pip python-argparse \
   && yum clean all \
   && pip install elasticsearch-curator
