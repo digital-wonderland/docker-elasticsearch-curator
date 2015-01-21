@@ -10,3 +10,5 @@ RUN yum install -y epel-release \
 USER nobody
 
 ENTRYPOINT ["/usr/bin/curator"]
+
+CMD ["--help"]
